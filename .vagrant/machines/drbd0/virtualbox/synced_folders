@@ -1,0 +1,1 @@
+{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/home/klos/studia/2sem/swn/admin","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}

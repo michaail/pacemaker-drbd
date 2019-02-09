@@ -1,0 +1,11 @@
+Co do projektu konfiguracyjnego:
+- Zadanie: Skonstruowanie kompletnego klastra zapewniającego ciągłość działania usług 
+  (na maszynach wirtualnych - dystrybucja Linuxa dowolna)
+- Musi być zbudowany na bazie: Corosync, Pacemaker, DRBD
+- DRBD skonfigurowany nie na pliku jak robiliśmy na zajęciach, ale na faktycznie oddzielnej partycji na dysku wirtualnym maszyny (albo każda maszyna może mieć drugi wirtualny dysk przeznaczony do tego celu)
+- Zasoby w Pacemaker: "pływający" adres IP, usługa Apache/Nginx/jakiś-inny-serwer-http, punkt montowania urządzenia DRBD (oczywiście wszystko skolokowane na jednym wężle i odpowiednia sekwencja uruchamiania)
+- Na wspomnianym wyżej serwerze http powinna znajdować się strona umożliwiająca dodawanie, usuwanie i edycję plików tekstowych na partycji synchronizowanej przez DRBD
+- Efekt końcowy dla użytkownika: po przełączeniu zasobów na inny węzeł nie powinien widzieć żadnej różnicy
+- Klaster posiadający jedynie 2 węzły - max ocena 4.0
+
+

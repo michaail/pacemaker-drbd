@@ -1,0 +1,2 @@
+net -> protocol C - Writes to the DRBD device complete as soon as they have reached the local and all remote disks.
+
